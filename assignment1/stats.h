@@ -93,7 +93,7 @@ unsigned char find_minimum(unsigned char *data, unsigned int n);
  * 
  * @return unsigned char array: array of char result from the sort data array
  */
-unsigned char sort_array(unsigned char *data, unsigned int n);
+void sort_array (unsigned char *data, unsigned int n);
 
 
-#endif
+#endif // __STATS_H__ 
