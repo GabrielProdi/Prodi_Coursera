@@ -91,13 +91,13 @@ unsigned char find_median ( unsigned char *data, unsigned int n ) {
 }
 
 unsigned char find_mean ( unsigned char *data, unsigned int n ) {
-  unsigned int i, sum;
+  unsigned int i, sum = 0;
 
   if ( n <= 0 ) {
     n = 1;
   }
   for ( i = 0 ; i < n ; i++ ) {
-    sum += *( data + i );
+    sum += data [i] ;
   }
 
   return ( sum / n );
